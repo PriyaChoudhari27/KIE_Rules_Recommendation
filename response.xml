@@ -1,0 +1,314 @@
+{
+  "type" : "SUCCESS",
+  "msg" : "Container AWS_Recommendation_Generator_1.0.0-SNAPSHOT successfully called.",
+  "result" : {
+    "execution-results" : {
+      "results" : [ {
+        "value" : {"com.myspace.aws_recommendation_generator.VirtualMachine":{
+  "accountName" : "AWS_account",
+  "accountType" : "Aws",
+  "assetIdentity" : "Vol-008288bb065342961",
+  "assetName" : null,
+  "assetRegion" : "Eu-west-2",
+  "configId" : "10.2",
+  "environmentName" : "Q Infinite AWS",
+  "environmentType" : "Development",
+  "availabilityZone" : "Eu-west-2a",
+  "elasticIpAddress" : "34.238.124.86",
+  "instanceType" : "M5.xlarge",
+  "numberOfCPU" : 2,
+  "privateIpAddress" : "10.30.5.19",
+  "serverId" : "I-003fb006ffeec20c8",
+  "serverState" : "Running",
+  "storage" : "Vol-0c5ef94aec5fc31fc",
+  "subnetId" : "Subnet-09cf65d708e0cb492",
+  "vpcId" : "Vpc-017fb2d0bcea49513",
+  "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+}},
+        "key" : "vm"
+      }, {
+        "value" : [{"com.myspace.aws_recommendation_generator.VirtualMachine":{
+  "accountName" : "AWS_account",
+  "accountType" : "Aws",
+  "assetIdentity" : "Vol-008288bb065342961",
+  "assetName" : null,
+  "assetRegion" : "Eu-west-2",
+  "configId" : "10.2",
+  "environmentName" : "Q Infinite AWS",
+  "environmentType" : "Development",
+  "availabilityZone" : "Eu-west-2a",
+  "elasticIpAddress" : "34.238.124.86",
+  "instanceType" : "M5.xlarge",
+  "numberOfCPU" : 2,
+  "privateIpAddress" : "10.30.5.19",
+  "serverId" : "I-003fb006ffeec20c8",
+  "serverState" : "Running",
+  "storage" : "Vol-0c5ef94aec5fc31fc",
+  "subnetId" : "Subnet-09cf65d708e0cb492",
+  "vpcId" : "Vpc-017fb2d0bcea49513",
+  "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Ensure instances are distributed across multiple availability zones for redundancy.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Review the usage of Elastic IPs to optimize costs.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Verify the VPC configuration for security and efficiency.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Ensure development instances are not left running unnecessarily.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Review the billing and usage reports for this instance to ensure cost efficiency.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Consider using more efficient storage solutions to reduce costs.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Review the lifecycle policy for this instance to optimize uptime and costs.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Ensure that Kubernetes Cluster Autoscaler settings are optimized for your workload.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "This is a test recommendation.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Review the private IP usage and ensure it aligns with your network architecture.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}},{"com.myspace.aws_recommendation_generator.Recommendation":{
+  "message" : "Verify the subnet configuration to ensure network performance and security.",
+  "vm" : {
+    "accountName" : "AWS_account",
+    "accountType" : "Aws",
+    "assetIdentity" : "Vol-008288bb065342961",
+    "assetName" : null,
+    "assetRegion" : "Eu-west-2",
+    "configId" : "10.2",
+    "environmentName" : "Q Infinite AWS",
+    "environmentType" : "Development",
+    "availabilityZone" : "Eu-west-2a",
+    "elasticIpAddress" : "34.238.124.86",
+    "instanceType" : "M5.xlarge",
+    "numberOfCPU" : 2,
+    "privateIpAddress" : "10.30.5.19",
+    "serverId" : "I-003fb006ffeec20c8",
+    "serverState" : "Running",
+    "storage" : "Vol-0c5ef94aec5fc31fc",
+    "subnetId" : "Subnet-09cf65d708e0cb492",
+    "vpcId" : "Vpc-017fb2d0bcea49513",
+    "tags" : [ "k8s.io/cluster-autoscaler/enabled:Owned", "name:example-vm", "kubernetes.io/cluster:cluster-1", "aws:autoscaling:groupName:example-autoscaling-group" ]
+  }
+}}],
+        "key" : "recommendation"
+      } ],
+      "facts" : [ {
+        "value" : {"org.drools.core.common.DefaultFactHandle":{
+  "external-form" : "0:1:411049277:411049277:1:DEFAULT:NON_TRAIT:com.myspace.aws_recommendation_generator.VirtualMachine"
+}},
+        "key" : "vm"
+      } ]
+    }
+  }
+}

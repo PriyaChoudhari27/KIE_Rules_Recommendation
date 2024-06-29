@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "1718fb5c-b562-4484-a019-de5e70ea0197",
+		"name": "Recommendation Generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/recommendation",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.197.100.75:30735/kie-server/services/rest/server/containers/instances/AWS_Recommendation_Generator_1.0.0-SNAPSHOT",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lookup\": \"defaultStatelessKieSession\",\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"com.myspace.aws_recommendation_generator.VirtualMachine\": {\n                        \"accountName\": \"AWS_account\",\n                        \"accountType\": \"Aws\",\n                        \"assetIdentity\": \"Vol-008288bb065342961\",\n                        \"assetName\": null,\n                        \"assetRegion\": \"Eu-west-2\",\n                        \"configId\": \"10.2\",\n                        \"environmentName\": \"Q Infinite AWS\",\n                        \"environmentType\": \"Development\",\n                        \"availabilityZone\": \"Eu-west-2a\",\n                        \"elasticIpAddress\": \"34.238.124.86\",\n                        \"instanceType\": \"M5.xlarge\",\n                        \"numberOfCPU\": 2,\n                        \"privateIpAddress\": \"10.30.5.19\",\n                        \"serverId\": \"I-003fb006ffeec20c8\",\n                        \"serverState\": \"Running\",\n                        \"storage\": \"Vol-0c5ef94aec5fc31fc\",\n                        \"subnetId\": \"Subnet-09cf65d708e0cb492\",\n                        \"vpcId\": \"Vpc-017fb2d0bcea49513\",\n                        \"tags\": [\n                            \"k8s.io/cluster-autoscaler/enabled:Owned\",\n                            \"name:example-vm\",\n                            \"kubernetes.io/cluster:cluster-1\",\n                            \"aws:autoscaling:groupName:example-autoscaling-group\"\n                        ]\n                    }\n                },\n                \"out-identifier\": \"vm\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        },\n        {\n            \"get-objects\": {\n                \"out-identifier\": \"recommendation\"\n            }\n        }\n    ]\n}"
+				},
+				"url": "http://34.197.100.75:30735/kie-server/services/rest/server/containers/instances/AWS_Recommendation_Generator_1.0.0-SNAPSHOT"
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.197.100.75:30735/kie-server/services/rest/server/containers/instances/test_project_1.0.0-SNAPSHOT",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic <base64-encoded-username-password>"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"lookup\": \"defaultStatelessKieSession\",\n  \"commands\": [\n    {\n      \"insert\": {\n        \"com.myspace.test_project.VirtualMachine\": {\n          \"id\": 1,\n          \"accountType\": \"Aws\",\n          \"numberOfCPU\": 2\n        }\n      }\n    },\n    {\n      \"fire-all-rules\": {}\n    }\n  ]\n}\n"
+				},
+				"url": "http://34.197.100.75:30735/kie-server/services/rest/server/containers/instances/test_project_1.0.0-SNAPSHOT"
+			},
+			"response": []
+		}
+	]
+}
